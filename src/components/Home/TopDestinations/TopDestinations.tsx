@@ -84,14 +84,16 @@ const TopDestinationsSlider = () => {
         >
           {destinations.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl dark:shadow-blue-900/5 group bg-slate-100 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
+              <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl dark:shadow-blue-900/5 group bg-slate-100 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 h-87.5 sm:h-100 md:h-112.5 lg:h-125">
                 <Image
                   src={item.img}
                   alt={item.name}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  loading={item.id === 1 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80" />
+                <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/20 to-black/80" />
 
                 {/* Card Content */}
                 <div className="absolute bottom-6 left-6 right-6 z-20 text-left">

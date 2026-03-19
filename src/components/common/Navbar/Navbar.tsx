@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { HiMenuAlt3 } from 'react-icons/hi'; // Mobile Menu Icon
-import Logo from '../Logo/Logo';
+import React, { useState } from "react";
+import Link from "next/link";
+import { HiMenuAlt3 } from "react-icons/hi"; // Mobile Menu Icon
+import Logo from "../Logo/Logo";
 
 // Navigation links data
 const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'Travel', href: '/travel' },
-  { name: 'Pages', href: '/pages' },
-  { name: 'Shop', href: '/shop' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact Us', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "Travel", href: "/travel" },
+  { name: "Pages", href: "/pages" },
+  { name: "Shop", href: "/shop" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -28,20 +28,21 @@ const Navbar = () => {
       {/* Main container with fixed width for large screens */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
-          
           {/* 1. Logo (Left) */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <Logo />
           </div>
 
           {/* 2. Navigation Links & Search Button (Right) */}
           <div className="flex items-center gap-8">
-            
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center text-slate-700 font-medium text-sm">
               {navLinks.map((link, index) => (
                 <React.Fragment key={link.name}>
-                  <Link href={link.href} className="hover:text-emerald-500 transition-colors">
+                  <Link
+                    href={link.href}
+                    className="hover:text-emerald-500 transition-colors"
+                  >
                     {link.name}
                   </Link>
                   {/* Show separator dot except after the last link */}

@@ -1,9 +1,9 @@
-import Logo from "@/components/common/Logo/Logo";
 import "@/app/globals.css";
 import HeroBanner from "@/components/Home/HeroBanner/HeroBanner";
 import Destinations from "@/components/Home/Destinations/Destinations";
 import VacationSearch from "@/components/Home/VacationSearch/VacationSearch";
 import TopDestinations from "@/components/Home/TopDestinations/TopDestinations";
+import EmbraceAdventure from "@/components/Home/EmbraceAdventure/EmbraceAdventure";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Destinations></Destinations>
         <VacationSearch></VacationSearch>
         <TopDestinations></TopDestinations>
+        <EmbraceAdventure></EmbraceAdventure>
       </div>
     </div>
   );

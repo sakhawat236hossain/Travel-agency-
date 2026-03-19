@@ -8,13 +8,13 @@ const HeroBanner = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
         {/* --- Left Part: Text & Buttons --- */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#4285F4] leading-tight max-w-full md:max-w-[500px] px-4 md:px-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#4285F4] leading-tight max-w-full md:max-w-125 px-4 md:px-0">
             Begin Your <br />
             <span className="text-blue-700">Fantastic Travel</span> <br />
             Experience <span className="font-light text-blue-700">Here</span>
           </h1>
 
-          <p className="text-slate-600 mt-4 max-w-full md:max-w-[450px] px-4 md:px-0 text-sm md:text-base">
+          <p className="text-slate-600 mt-4 max-w-full md:max-w-112.5 px-4 md:px-0 text-sm md:text-base">
             Explore the world with ease. Find the best destinations, book your
             tickets, and start your dream journey today.
           </p>
@@ -45,7 +45,9 @@ const HeroBanner = () => {
             width={700}
             height={600}
             className="object-contain max-w-full h-auto"
+            sizes="(max-width: 768px) 100vw, 50vw"
             priority
+            loading="eager"
           />
         </div>
       </div>

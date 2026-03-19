@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { FaClock, FaEnvelope, FaLink, FaMapMarkerAlt } from "react-icons/fa";
-import { LuMedal, LuShoppingBag, LuPartyPopper } from "react-icons/lu";
 
 const categories = [
   {
@@ -93,6 +92,7 @@ const Destinations = () => {
                 width={400}
                 height={300}
                 className="object-cover w-full h-auto"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
               />
             </div>
           ))}
@@ -109,7 +109,9 @@ const Destinations = () => {
                   src={trip.image}
                   alt={trip.title}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading={trip.id === 1 ? "eager" : "lazy"}
                 />
                 {trip.isSale && (
                   <span className="absolute top-4 right-4 bg-blue-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase z-20 shadow-md">

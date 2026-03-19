@@ -21,11 +21,11 @@ const VacationSearch = () => {
         </div>
 
         {/* --- The Rounded Search Bar Section --- */}
-        <div className="bg-white dark:bg-slate-900 rounded-xl md:rounded-2xl md:rounded-full shadow-2xl dark:shadow-blue-900/10 p-3 md:p-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 max-w-6xl mx-auto border border-slate-100 dark:border-slate-800 w-full">
+        <div className="bg-white dark:bg-slate-900 rounded-xl md:rounded-full shadow-2xl dark:shadow-blue-900/10 p-3 md:p-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 max-w-6xl mx-auto border border-slate-100 dark:border-slate-800 w-full">
           {/* 1. Search (Keyword) Area */}
           <div className="flex items-center gap-3 md:gap-4 px-4 md:px-6 py-2 w-full md:w-[30%] border-r-0 md:border-r border-slate-100 dark:border-slate-800 last:border-r-0">
-            <FaSearch className="text-xl md:text-2xl text-blue-600 dark:text-blue-500 flex-shrink-0" />
-            <div className="flex-grow min-w-0">
+            <FaSearch className="text-xl md:text-2xl text-blue-600 dark:text-blue-500 shrink-0" />
+            <div className="grow min-w-0">
               <span className="block text-slate-900 dark:text-slate-200 font-bold text-xs md:text-sm uppercase tracking-wider">
                 Search
               </span>
@@ -39,8 +39,8 @@ const VacationSearch = () => {
 
           {/* 2. Destinations Area */}
           <div className="flex items-center gap-3 md:gap-4 px-4 md:px-6 py-2 w-full md:w-[30%] border-r-0 md:border-r border-slate-100 dark:border-slate-800 last:border-r-0">
-            <FaMapMarkerAlt className="text-xl md:text-2xl text-blue-600 dark:text-blue-500 flex-shrink-0" />
-            <div className="flex-grow min-w-0">
+            <FaMapMarkerAlt className="text-xl md:text-2xl text-blue-600 dark:text-blue-500 shrink-0" />
+            <div className="grow min-w-0">
               <span className="block text-slate-900 dark:text-slate-200 font-bold text-xs md:text-sm uppercase tracking-wider">
                 Destinations
               </span>
@@ -55,8 +55,8 @@ const VacationSearch = () => {
 
           {/* 3. Typologies Area */}
           <div className="flex items-center gap-3 md:gap-4 px-4 md:px-6 py-2 w-full md:w-[30%]">
-            <FaListUl className="text-xl md:text-2xl text-blue-600 dark:text-blue-500 flex-shrink-0" />
-            <div className="flex-grow min-w-0">
+            <FaListUl className="text-xl md:text-2xl text-blue-600 dark:text-blue-500 shrink-0" />
+            <div className="grow min-w-0">
               <span className="block text-slate-900 dark:text-slate-200 font-bold text-xs md:text-sm uppercase tracking-wider">
                 Typologies
               </span>
