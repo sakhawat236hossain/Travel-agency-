@@ -58,7 +58,7 @@ const EmbraceAdventure = () => {
           </ul>
           
           {/* Button */}
-          <button className="mt-10 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-10 rounded-full shadow-lg transition duration-300 transform active:scale-95 uppercase tracking-widest text-sm">
+          <button className="mt-10 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-10 rounded-full shadow-lg transition duration-300 transform active:scale-95 uppercase tracking-widest text-sm">
             All Services
           </button>
         </div>
