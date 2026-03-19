@@ -9,10 +9,10 @@ const HeroBanner = () => {
         
         {/* --- Left Part: Text & Buttons --- */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1E3A8A] leading-tight max-w-[500px]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#4285F4] leading-tight max-w-[500px]">
             Begin Your <br />
-            <span className="font-bold text-blue-700">Fantastic Travel</span> <br />
-            Experience <span className="font-light text-blue-500">Here</span>
+            <span className=" text-blue-700">Fantastic Travel</span> <br />
+            Experience <span className="font-light text-blue-700">Here</span>
           </h1>
           
           <p className="text-slate-600 mt-6 max-w-[450px]">
