@@ -2,6 +2,7 @@ import Logo from "@/components/common/Logo/Logo";
 import "@/app/globals.css";
 import HeroBanner from "@/components/Home/HeroBanner/HeroBanner";
 import Destinations from "@/components/Home/Destinations/Destinations";
+import VacationSearch from "@/components/Home/VacationSearch/VacationSearch";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div>
        <HeroBanner></HeroBanner>
        <Destinations></Destinations>
+       <VacationSearch></VacationSearch>
       </div>
     </div>
   );

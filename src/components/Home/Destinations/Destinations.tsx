@@ -60,7 +60,7 @@ const travelData = [
 
 const Destinations = () => {
   return (
-    <section className="py-20 bg-white select-none">
+    <section className="py-20 select-none">
       <div className="container mx-auto px-6">
         {/* --- Header Section --- */}
         <div className="mb-12">
@@ -85,7 +85,7 @@ const Destinations = () => {
           {categories.map((category) => (
             <div
               key={category.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300 border border-slate-50"
+              className=" rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300 border border-slate-50"
             >
               <Image
                 src={category.image}
@@ -102,7 +102,7 @@ const Destinations = () => {
           {travelData.map((trip) => (
             <div
               key={trip.id}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-slate-50"
+              className="rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-slate-50"
             >
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
@@ -119,7 +119,7 @@ const Destinations = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex items-center justify-between text-blue-500 mb-4 bg-blue-50/50 p-2 rounded-lg">
+                <div className="flex items-center justify-between text-blue-500 mb-4  p-2 rounded-lg">
                   <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider">
                     <FaClock /> {trip.duration}
                   </div>

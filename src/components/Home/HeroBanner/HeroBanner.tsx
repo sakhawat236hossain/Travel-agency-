@@ -4,7 +4,7 @@ import { FaPlay } from "react-icons/fa";
 
 const HeroBanner = () => {
   return (
-    <section className="bg-[#E6F0FF] min-h-[85vh] flex items-center select-none overflow-hidden">
+    <section className=" min-h-[85vh] flex items-center select-none overflow-hidden">
       <div className="container mx-auto px-6 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-12">
         
         {/* --- Left Part: Text & Buttons --- */}
