@@ -60,7 +60,7 @@ const Navbar = () => {
 
             {/* Blue Search Button */}
             <button className="bg-[#568bf5] text-white px-6 py-2 rounded-lg font-semibold text-sm hover:bg-[#4a7de0] transition-colors">
-              Search
+              Dashboard
             </button>
           </div>
         </div>
