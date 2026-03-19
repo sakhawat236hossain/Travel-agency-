@@ -26,6 +26,7 @@ const Footer = () => {
 
   const quickLinks = [
     { name: "About Us", href: "#" },
+    { name: "Contact Us", href: "/contact" },
     { name: "Travel Blog", href: "#" },
     { name: "Terms & Conditions", href: "#" },
     { name: "Privacy Policy", href: "#" },
@@ -101,7 +102,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* --- বটম বার --- */}
         <div className="pt-10 border-t border-slate-100 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-400 dark:text-slate-500 text-xs font-light text-center">
             © {currentYear} <span className="font-bold text-slate-600 dark:text-slate-300">Md Sakhawat Hossain</span>. All rights reserved.
