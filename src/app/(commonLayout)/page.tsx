@@ -5,6 +5,7 @@ import VacationSearch from "@/components/Home/VacationSearch/VacationSearch";
 import TopDestinations from "@/components/Home/TopDestinations/TopDestinations";
 import EmbraceAdventure from "@/components/Home/EmbraceAdventure/EmbraceAdventure";
 import Testimonial from "@/components/Home/Testimonial/Testimonial";
+import Pricing from "@/components/Home/Pricing/Pricing";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <TopDestinations></TopDestinations>
         <EmbraceAdventure></EmbraceAdventure>
         <Testimonial></Testimonial>
+        <Pricing></Pricing>
       </div>
     </div>
   );
