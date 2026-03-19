@@ -72,7 +72,7 @@ const Pricing = () => {
           {plans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative rounded-[40px] p-10 transition-all duration-500 hover:-translate-y-3 shadow-xl group ${
+              className={`relative rounded-[20px] p-10 transition-all duration-500 hover:-translate-y-3 shadow-xl group ${
                 plan.highlight
                   ? "bg-blue-600 text-white scale-105 z-10 shadow-blue-500/20 shadow-2xl"
                   : "bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-100 dark:border-slate-800"
