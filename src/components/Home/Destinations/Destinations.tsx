@@ -60,51 +60,51 @@ const travelData = [
 
 const Destinations = () => {
   return (
-    <section className="py-20 select-none">
-      <div className="container mx-auto px-6">
+    <section className="py-12 md:py-20 select-none w-full">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* --- Header Section --- */}
-        <div className="mb-12">
-          <span className="text-blue-500 font-medium italic tracking-wide">
+        <div className="mb-10 md:mb-12">
+          <span className="text-blue-500 font-medium italic tracking-wide text-sm md:text-base">
             Dream Vacation Destination
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-[#1a2e6e] mt-2 mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1a2e6e] mt-2 mb-4 md:mb-6 leading-tight px-4 md:px-0">
             Plan the Trip of a Lifetime <br /> with Ease
           </h2>
-          <p className="text-slate-500 max-w-xl leading-relaxed">
-            Whether you're looking for a romantic getaway, a family-friendly
-            adventure, or a solo journey, our agency provides custom-tailored
-            itineraries.
+          <p className="text-slate-500 max-w-xl leading-relaxed px-4 md:px-0 text-sm md:text-base">
+            Whether you&apos;re looking for a romantic getaway, a
+            family-friendly adventure, or a solo journey, our agency provides
+            custom-tailored itineraries.
           </p>
-          <button className="mt-8 bg-blue-600 text-white px-8 py-3 cursor-pointer rounded-md font-bold hover:bg-blue-700 transition-all shadow-lg active:scale-95">
+          <button className="mt-6 md:mt-8 bg-blue-600 text-white px-6 md:px-8 py-2.5 md:py-3 cursor-pointer rounded-md font-bold text-sm md:text-base hover:bg-blue-700 transition-all shadow-lg active:scale-95 w-full sm:w-auto">
             More Info
           </button>
         </div>
 
         {/* --- 1. Category Cards (Top Section - Fixed Links) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-16">
           {categories.map((category) => (
             <div
               key={category.id}
-              className=" rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300 border border-slate-50"
+              className="rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300 border border-slate-50 w-full"
             >
               <Image
                 src={category.image}
                 alt={`Category ${category.id}`}
                 width={400}
                 height={300}
-                className="object-cover"
+                className="object-cover w-full h-auto"
               />
             </div>
           ))}
         </div>
         {/* --- 2. Destination Cards (Bottom Section) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {travelData.map((trip) => (
             <div
               key={trip.id}
-              className="rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-slate-50"
+              className="rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-slate-50 w-full"
             >
-              <div className="relative h-64 w-full overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full overflow-hidden">
                 <Image
                   src={trip.image}
                   alt={trip.title}
@@ -119,41 +119,42 @@ const Destinations = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex items-center justify-between text-blue-500 mb-4  p-2 rounded-lg">
-                  <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider">
-                    <FaClock /> {trip.duration}
+                <div className="flex items-center justify-between text-blue-500 mb-3 md:mb-4 p-2 rounded-lg">
+                  <div className="flex items-center gap-1.5 md:gap-2 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">
+                    <FaClock className="text-xs md:text-sm" /> {trip.duration}
                   </div>
-                  <div className="flex gap-3">
-                    <FaEnvelope className="cursor-pointer hover:text-blue-700 transition-colors" />
-                    <FaLink className="cursor-pointer hover:text-blue-700 transition-colors" />
+                  <div className="flex gap-2 md:gap-3">
+                    <FaEnvelope className="cursor-pointer hover:text-blue-700 transition-colors text-sm md:text-base" />
+                    <FaLink className="cursor-pointer hover:text-blue-700 transition-colors text-sm md:text-base" />
                   </div>
                 </div>
 
-                <h3 className="text-xl font-extrabold text-[#1a2e6e] mb-1">
+                <h3 className="text-lg sm:text-xl font-extrabold text-[#1a2e6e] mb-1 px-2 md:px-0">
                   {trip.title}
                 </h3>
-                <div className="flex items-center gap-1 text-blue-500 mb-4 text-[11px] font-bold uppercase">
-                  <FaMapMarkerAlt /> {trip.location}
+                <div className="flex items-center gap-1 text-blue-500 mb-3 md:mb-4 text-[9px] sm:text-[11px] font-bold uppercase px-2 md:px-0">
+                  <FaMapMarkerAlt className="text-xs md:text-sm" />{" "}
+                  {trip.location}
                 </div>
 
-                <p className="text-slate-500 text-sm mb-8 line-clamp-3 leading-relaxed">
+                <p className="text-slate-500 text-xs sm:text-sm mb-6 md:mb-8 line-clamp-3 leading-relaxed px-2 md:px-0">
                   {trip.description}
                 </p>
 
-                <div className="flex items-center justify-between border-t border-slate-100 pt-4">
-                  <button className="bg-blue-600 text-white px-6 py-2 rounded-md font-bold text-xs hover:bg-blue-700 transition-all shadow-md active:scale-95">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 md:gap-4 border-t border-slate-100 pt-3 md:pt-4 w-full">
+                  <button className="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-md font-bold text-xs hover:bg-blue-700 transition-all shadow-md active:scale-95 w-full sm:w-auto">
                     DETAILS
                   </button>
-                  <div className="text-right">
-                    <span className="block text-slate-400 text-[10px] font-bold uppercase leading-none">
+                  <div className="text-right w-full sm:w-auto">
+                    <span className="block text-slate-400 text-[8px] sm:text-[10px] font-bold uppercase leading-none">
                       From
                     </span>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl font-black text-[#1a2e6e]">
+                    <div className="flex items-center gap-1.5 md:gap-2">
+                      <span className="text-lg sm:text-xl font-black text-[#1a2e6e]">
                         ${trip.price}
                       </span>
                       {trip.oldPrice && (
-                        <span className="text-sm text-slate-300 line-through font-medium">
+                        <span className="text-xs sm:text-sm text-slate-300 line-through font-medium">
                           ${trip.oldPrice}
                         </span>
                       )}
